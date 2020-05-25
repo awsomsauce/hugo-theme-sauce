@@ -2,6 +2,7 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var webpack = require('webpack');
 var AssetsPlugin = require('assets-webpack-plugin');
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
 	entry: {
@@ -49,7 +50,8 @@ module.exports = {
 				return getPath('css/[name].[contenthash].css');
 			},
 			allChunks: true
-		})
+		}),
+		new CleanWebpackPlugin()
 	],
 	watchOptions: {
 		watch: true
