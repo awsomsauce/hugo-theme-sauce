@@ -1,0 +1,36 @@
+.sauce {
+   /* RESET */
+   text-decoration: none;
+   line-height: 1;
+
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   padding: 5px 5px;
+   overflow: hidden;
+   vertical-align: bottom;
+   transition: color ease-out;
+}
+
+.sauce::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(100%);
+   width: 100%;
+   height: 100%;
+   background: #b21407;
+   transition: transform ease-out;
+}
+
+.sauce:hover {
+   color: #fff;
+   transform: skew(-15deg, 0deg);
+}
+.sauce:hover::before {
+   transform: translateY(0) ;
+   transition: transform ease-out;
+
+}
