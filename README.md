@@ -1,4 +1,6 @@
-# Ananke, A theme for [Hugo](http://gohugo.io/), a framework for building websites.
+# Sauce, A theme for [Hugo](http://gohugo.io/), a framework for building websites.
+
+This theme is a fork of [Ananke](https://github.com/budparr/gohugo-theme-ananke).
 
 The intent of this theme is to provide a solid starting place for Hugo sites with basic features and include best practices for performance, accessibility, and rapid development.
 
