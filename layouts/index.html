@@ -2,20 +2,18 @@
 <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
     {{ .Content }}
   </article>
-  <section class="cf tc-l center lh-copy">
-    {{ $pag := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-    {{ range $pag.Pages }}
+  <section class="cf tc-l center lh-copy mw5 mw8-ns f4 lh-copy mid-gray">
+    {{ range (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
     <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
-      <div class="aspect-ratio aspect-ratio--1x1">
+      <div class="aspect-ratio aspect-ratio--8x5">
         <img style="background-image:url(http://mrmrs.github.io/images/0006.jpg);"
           class="db bg-center cover aspect-ratio--object" />
       </div>
       <a href="#0" class="ph2 ph0-ns pb3 link db">
         <h3 class="f5 f4-ns mb0 black-90">{{ .Title }}</h3>
-        <h3 class="f6 f5 fw4 mt2 black-60">Subtitle of piece</h3>
+        <h3 class="f6 f5 fw4 mt2 black-60">{{ .Description }}</h3>
       </a>
     </article>
     {{ end }}
     </section>
-    </div>
 {{ end }}
