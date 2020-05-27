@@ -4,9 +4,9 @@
   </article>
   <section class="cf tc-l center lh-copy mw5 mw8-ns f4 lh-copy mid-gray">
     {{ range (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-    <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
+    <article class="fl w-100 w-50-m w-50-ns pa2-ns">
       <div class="aspect-ratio aspect-ratio--8x5">
-        <img style="background-image:url(http://mrmrs.github.io/images/0006.jpg);"
+        <img style="background-image:url({{ .Param "featured_image" }});"
           class="db bg-center cover aspect-ratio--object" />
       </div>
       <a href="#0" class="ph2 ph0-ns pb3 link db">
