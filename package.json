@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/theNewDynamic/thenewdynamic.com#readme",
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.2.0",
     "auto-changelog": "^1.16.1"
   }
 }
