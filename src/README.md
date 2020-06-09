@@ -1,4 +1,4 @@
-## Welcome to the SRC folder for the Gohugo Ananke Theme.
+## Welcome to the SRC folder for the Hugo Sauce Theme.
 
 The contents of this folder are used to generate CSS and javascript. You may never have to touch anything here,  unless you want to more deeply customize your styles.
 
