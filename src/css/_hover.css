@@ -25,6 +25,10 @@
    transition: transform ease-out;
 }
 
+.bg-sauce {
+   background: #b21407;
+}
+
 .sauce:hover {
    color: #fff;
    transform: skew(-15deg, 0deg);
