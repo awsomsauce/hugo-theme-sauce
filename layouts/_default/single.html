@@ -8,8 +8,11 @@
   <article class="flex-l flex-wrap justify-between mw8 center ph3">
 
     <div class="nested-copy-line-height mt4 lh-copy {{ $.Param "post_content_classes"  | default "serif"}} f4 nested-links nested-img dark-gray w-two-thirds-m ph6-l center">
-      <span class="f4 mv4 dib tracked"> {{ .ReadingTime}} minutes read</span>
-      <span class="f4 mv4 dib tracked">- {{ .WordCount}} words</span>
+      <div class="tc">
+        <span class="f4 mv4 dib tracked work-sans"> {{ .ReadingTime}} minutes read</span>
+        <span class="f4 mv4 dib tracked work-sans">— {{ .WordCount}} words</span>
+      </div>
+
       {{- .Content -}}
       {{- partial "tags.html" . -}}
       <div class="mt6 instapaper_ignoref">
