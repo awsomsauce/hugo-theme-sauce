@@ -1,6 +1,6 @@
 <nav class="db dt-l w-100 border-box">
-  <a class="db dtc-l v-mid mid-gray link w-50 w-20-l tc tl-l mb2 mb0-l ph2-l center" href="#" title="Home">
-    <img src="{{ .Param "logo" }}" class="w-80 dib ml4-l" alt="Site Name">
+  <a class="db dtc-l v-mid mid-gray link w-60 w-20-l tc tl-l mb2 mb0-l ph2-l center" href="{{ .Site.Home.RelPermalink }}" title="Home">
+    <img src="{{ .Param "logo" }}" class="w-100 dib ml4-l" alt="Site Name">
   </a>
     <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
       {{ partial "i18nlist.html" . }}
