@@ -2,18 +2,17 @@
 {{ if $featured_image }}
   {{/* Trimming the slash and adding absURL make sure the image works no matter where our site lives */}}
   {{ $featured_image := (trim $featured_image "/") | absURL }}
-  <header class="vh-100 dt w-100 tc bg-dark-gray white cover" style="background-image: url('{{ $featured_image }}');">
+  <header class="vh-100 dt w-100 tc bg-dark-gray white cover" style="background: url('{{ $featured_image }}') no-repeat center;">
     <div class="vh-100 {{ .Site.Params.cover_dimming_class | default "bg-black-70" }}">
         {{ partial "site-navigation.html" .}}
-      <div class="mw9 center pa4 pt5-ns ph7-l">
-      <time class="f4 mb2 dib ttu tracked mt4"><small>{{- .Date.Format "January 2, 2006" -}}</small></time>
+      <div class="mw9 center pa4 pt6 pt5-ns ph7-l">
+      <time class="f3 mb4 dib ttu tracked"><small>{{- .Date.Format "January 2, 2006" -}}</small></time>
       <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
-        <span class=" white pa1 tracked-tight">
+        <span class="white pa1 tracked-tight">
           {{ .Title }}
         </span>
       </h3>
       <h4 class="f3 fw1 cabin i">{{ .Description }}</h4>
-      <h5 class="f6 ttu tracked white pt2">By {{ .Params.author }}</h5>
     </div>
     </div>
   </header>
