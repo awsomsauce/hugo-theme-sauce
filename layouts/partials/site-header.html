@@ -6,14 +6,14 @@
   <header class="vh-100 dt w-100 tc bg-dark-gray white cover" style="background: url('{{ $featured_image }}') no-repeat center;">
     <div class="vh-100 {{ .Site.Params.cover_dimming_class | default "bg-black-60" }}">
         {{ partial "site-navigation.html" .}}
-      <div class="tc-l v-mid pv7 pv6-l">
-        <h1 class="f2 f-subheadline-l fw2 white-90 mv0 lh-title">
-          {{ .Title }}
-        </h1>
-          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
-            {{ .Description }}
-          </h2>
-          <a href="{{ .Permalink }}" class="dib cabin hover-white no-underline white sauce link f4 f3-ns">read now</a>
+      <div class="tc-l v-mid pv6 pv6-m pv6-l">
+        <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+          <span class="white pa1 tracked-tight">
+            {{ .Title }}
+          </span>
+        </h3>
+        <h4 class="f3 fw1 cabin i">{{ .Description }}</h4>
+        <a href="{{ .Permalink }}" class="dib montserrat hover-white no-underline white sauce link f4 f3-ns">read now</a>
       </div>
     </div>
   </header>
